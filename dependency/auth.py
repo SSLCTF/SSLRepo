@@ -7,7 +7,7 @@ import jwt
 
 http_bearer = HTTPBearer()
 
-SECRET = "RnLmvxlf3xlzdcwoaULW9XEn6LgRqhrCgHvDh45l3qpGU1w6GwjTjwogjTXQpk3pGu3OHSEYKLeJVRaXSteWhs"
+SECRET = os.getenv("JWT_KEY")
 ALGORITHM = os.getenv("JWT_ALG")
 
 def ctf_policy(
