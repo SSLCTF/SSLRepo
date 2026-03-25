@@ -7,10 +7,10 @@ import jwt
 
 http_bearer = HTTPBearer()
 
-SECRET = os.getenv("JWT_KEY")
+SECRET = "RnLmvxlf3xlzdcwoaULW9XEn6LgRqhrCgHvDh45l3qpGU1w6GwjTjwogjTXQpk3pGu3OHSEYKLeJVRaXSteWhs"
 ALGORITHM = os.getenv("JWT_ALG")
 
-async def ctf_policy(
+def ctf_policy(
     credentials: HTTPAuthorizationCredentials = Depends(http_bearer),
 ):
     token = credentials.credentials
