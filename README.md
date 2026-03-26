@@ -7,7 +7,7 @@
 ## Base URL
 
 ```
-http://localhost:8000/v1 # TODO: реальный адрес
+http://tasks.sslctf.ru/v1 # TODO: реальный адрес
 ```
 
 ---
@@ -66,6 +66,8 @@ Authorization: Bearer <JWT>
 ## Пример запроса
 
 ```bash
-curl -X GET "http://localhost:8000/v1/flag" \ # TODO: реальный адрес
+curl -X GET "http://tasks.sslctf.ru/v1/flag" \ # TODO: реальный адрес
   -H "Authorization: Bearer your_token_here"
 ```
+
+https://github.com/SSLCTF/SSLRepo/
